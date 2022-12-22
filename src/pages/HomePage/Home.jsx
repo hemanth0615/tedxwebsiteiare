@@ -5,7 +5,7 @@ import Gif from "../../assets/gif.png";
 import video from "../../assets/Comp 1_6.mp4";
 
 import Navbar from "../../components/Navbar";
-import theam from "../../assets/theam.png";
+import theam from "../../assets/Frame1.svg";
 
 function Speakers(indspeaker) {
   return (
