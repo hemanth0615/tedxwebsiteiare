@@ -22,14 +22,18 @@
 .categoryMembers{
     width: 100%;
 }
+.homeaboutind{
+    width: 80%;
+    margin-left: 10%;
+}
 .home_about_descs{
-    margin-left: 30%;
-    /* width: 500%; */
+    font-weight: bold;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.05em;
-    color: #000000;
+
+    color: #0B0B0B;
 }
 .home_about_end_desc{
     margin: 5%;
@@ -51,26 +55,28 @@
 .b_text{
     color: #000000;
 }
-.speaker_div{
-    /* position: relative; */
-    margin-bottom: 15%;
+
+
+.ind_speaker_div{
+    width: 292px;
+    height: 416px;
 }
 .speakers_sec_div {
     width: 90%;
     margin-left: 5%;
-
 }
 .home_speakers_Sec{
     width: 100%;
     height: 100%;
     background: #000000;
+    padding-top: 5%;
 }
 .speaker_ind_img {
     position: relative;
+    width: 292px;
+    height: 340px;
 }
-
 .speaker_ind_name_desc_div {
-    width: 100%;
     position: absolute;
     top: 80%;
     left: 40%;
@@ -80,13 +86,11 @@
 }
 
 .speaker_ind_name_div{
+    width: 292px;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    /* identical to box height */
-
     letter-spacing: 0.05em;
-
     color: #FFFFFF;
 }
 .speaker_ind_name_div:hover {
@@ -94,40 +98,29 @@
     opacity: 0.8;
 }
 .speaker_ind_desc_div{
+    position: relative;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
     letter-spacing: 0.05em;
-    padding-left: 8%;
-    padding-right: 8%;
     color: #EB0028;
-
     opacity: 0.8;
+    text-align: center;
 }
 .speaker_ind_desc{
     font-weight: 700;
     font-size: 14px;
-    line-height: 24px;
-    /* or 150% */
-    
-    text-align: center;
+    line-height: 24px;    
     letter-spacing: 0.05em;
-
     color: #EB0028;
-
     opacity: 0.8;
 }
 .speaker_ind_desc_div:hover {
     color: #FFFFFF;
 }
-
 .container-fluid {
     overflow: hidden;
 }
-
-
-
 
 
 
@@ -944,7 +937,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 p {
@@ -1007,11 +1000,16 @@ details[open] summary::before {
 } */
 @media (max-width: 576px) {
     .speaker_div {
-        width: 70%;
+        /* width: 70%;
         margin-left: 15%;
-        margin-bottom: 3%;
-        
+        margin-bottom: 3%; */
     }
+    /* .homeaboutind {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5%;
+        text-align:start;
+    } */
     .speaker_ind_img {
         /* width: 152px; */
     }

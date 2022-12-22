@@ -9,24 +9,17 @@ import theam from "../../assets/theam.png";
 
 function Speakers(indspeaker) {
   return (
-    <div class="speaker_div position-relative container-fluid">
-      =
-      <div class="speaker_div container">
+    <div class='speaker_div position-relative container-fluid'>
         <div class="speaker_ind_img">
-          <img
-            src={indspeaker.img}
-            class="speaker_ind_img img-fluid"
-            alt="Responsive image"
-          />
+          <img src={indspeaker.img} class="speaker_ind_img img-fluid" alt="Responsive image" />
           <div class="speaker_ind_name_desc_div text-center bg-text inner">
             <div className="speaker_ind_name_div">
-              <h1 class="speaker_ind_name "> {indspeaker.speakername} </h1>
-            </div>
-            <div className="speaker_ind_desc_div">
-              <p class="speaker_ind_desc">{indspeaker.desc}</p>
+              <h1 class='speaker_ind_name '> {indspeaker.speakername } </h1>
             </div>
           </div>
         </div>
+      <div className="speaker_ind_desc_div">
+        <p class='speaker_ind_desc'>{indspeaker.desc}</p>
       </div>
     </div>
   );
@@ -98,58 +91,27 @@ const Home = () => {
             <div className="team-flex-border"></div>
           </div>
           <div
-            style={{ display: allactive ? "" : "none" }}
-            className="categoryMembers md:ml-5 mt-6 grid grid-cols-3 gap-y-6 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline"
+            style={{ display: allactive ? "" : "none"}}
+            className="homeaboutind font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8"
           >
             <p class="home_about_descs">
-              TED is a nonprofit organization devoted to Ideas Worth Spreading.
-              Started as a four-day conference in California 30 years ago, TED
-              has grown to support its mission with multiple initiatives. The
-              two annual TED Conferences invite the world's leading thinkers and
-              doers to speak for 18 minutes or less. Many of these talks are
-              then made available, free, at TED.com. TED speakers have included
-              Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson,
-              Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan
-              and Daniel Kahneman. The annual TED Conference takes place each
-              spring in Vancouver, British Columbia. TED's media initiatives
-              include TED.com, where new TED Talks are posted daily; TED
-              Translators, which provides subtitles and interactive transcripts
-              as well as translations from volunteers worldwide; the educational
-              initiative TED-Ed. TED has established The Audacious Project that
-              takes a collaborative approach to funding ideas with the potential
-              to create change at thrilling scale; TEDx, which supports
-              individuals or groups in hosting local, self- organized TED-style
-              events around the world, and the TED Fellows program, helping
-              world-changing innovators from around the globe to amplify the
-              impact of their remarkable projects and activities.
+              TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world’s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman. Follow TED on Twitter <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a> 
             </p>
           </div>
           <div
             style={{ display: coreactive ? "" : "none" }}
-            className="categoryMembers md:ml-5 mt-6 grid grid-cols-3 gap-y-6 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline"
+            className="homeaboutind font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8"
           >
             <p class="home_about_descs">
-              In the spirit of ideas worth spreading, TEDx is a program of
-              local, self-organized events that bring people together to share a
-              TED-like experience. At a TEDx event, TED Talks video and live
-              speakers combine to spark deep discussion and connection. These
-              local, self-organized events are branded TEDx, where x =
-              independently organized TED event. The TED Conference provides
-              general guidance for the TEDx program, but individual TEDx events
-              are self-organized. (Subject to certain rules and regulations.)
+              In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
             </p>
           </div>
           <div
             style={{ display: contentactive ? "" : "none" }}
-            className="categoryMembers md:ml-5 mt-6 grid grid-cols-3 gap-y-6 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline"
+            className="homeaboutind font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8"
           >
             <p class="home_about_descs">
-              Nature vs nurture? Sounds peculiar right?IARE will be hosting a
-              very exciting event.TED x IARE presents you with stories of
-              exceptional individuals from different walks of life that have
-              contributed to society. Join us at TEDxIARE to listen to such
-              thought-provoking tales. Find out how nature vs nurture has
-              affected our kind.
+              Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark deep conversations and connections. TEDxAmsterdam is organised independently under license from TED.
             </p>
           </div>
         </section>
@@ -199,6 +161,7 @@ const Home = () => {
             <Speakers
               img={member}
               speakername="Robert"
+              
               desc="VISUAL ARTIST, COMPOSER &DIRECTOR"
             />
           </div>
