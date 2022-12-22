@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import logo from "../assets/logo.svg"
+import logowhite from "../assets/logowhite.png"
 import menu from "../assets/menu.svg"
 import menu2 from "../assets/menu-2.svg"
 import navbg from "../assets/nav-bg.png"
+
 
 
 
@@ -22,13 +24,13 @@ function Navbar() {
   return (
     <>
 
-      <nav className='bg-[#000000] font-[poppins] relative' >
+      <nav className='bg-[#0B0B0B] font-[poppins] relative' >
         <div className="container w-full p-4 text-white mx-auto  relative flex items-center justify-between">
-          <a href="/"><img className='sm:ml-5' src={logo} alt="logo" /></a>
-          <div className='hidden space-x-10 mr-6 md:flex'>
+          <a href="/"><img className='navlogoimg sm:ml-5 ' style={{width:"137px",height:"40px" }} src={logowhite} alt="logo" /></a>
+          <div className='hidden space-x-12 mr-6 md:flex'>
             <p className='text-lg font-medium cursor-pointer navhometext' ><a href="/"><span style={{ color: 'red' }}>H</span>ome</a></p>
-            <p className='text-lg font-medium cursor-pointer'><a href="about">About Us</a></p>
-            <button className='text-lg font-medium bg-[#EC1015] px-2 py-0.5'><a href="/">Register</a></button>
+            <p className='text-lg font-medium cursor-pointer navabouttext' style={{color: '#EB0028'}}><a href="about">About Us</a></p>
+            <button className='text-lg font-medium bg-[#EC1015] px-2 py-0'><a href="/">Register</a></button>
           </div>
           <button className='md:hidden' onClick={buttonClicked}>
             {
