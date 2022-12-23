@@ -176,12 +176,16 @@ function About() {
         </section>
       </div>
 
-      <section className='bg-[#000000] theam-section'>
-        <div className='container flex sm:items-center flex-col'>
-
+      <section className='home_theme_section w-100 '>
+        <div className='container flex sm:items-center flex-col w-100'>
+          <h6 className='home_theme_heading font-bold text-[#dc2626] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
           <img className='sm:w-7/12 lg:mb-20 md:mb-14 sm:mb-12 mb-8 sm:pt-20 pt-10' src={theam} alt="" />
-          <h6 className='font-bold text-[#dc2626] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
-          <p className='font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8'>Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark deep conversations and connections. TEDxAmsterdam is organised independently under license from TED.
+          <p className='home_theme_desc font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8'>How do you affect the world around you and how does the world around affect you? Our actions, behaviour, and decisions can have an impact on the people and environment around us. Whether it's choices we make in our personal lives or as a part of a larger community, we all have the power to shape the world in our small ways. 
+          <br /><br />
+          At the same time, the world around us also has a significant impact on us as individuals. The culture, politics, art, and society we live around impacts us in more ways than we realise. One could say that an individual is a battleground on which nature and nurture fight for dominance.
+          <br />
+          <br />
+          Join us at Tedx IARE to listen to perspectives from different walks of life
           </p>
         </div>
       </section>

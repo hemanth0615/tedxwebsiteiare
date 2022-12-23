@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import "./Home.css";
 import member from "../../assets/member.svg";
-import Gif from "../../assets/gif.png";
-import video from "../../assets/Comp 1_6.mp4";
-import scheduled_talks from "../../assets/Frame1000001006.svg"
+import video from "../../assets/Comp 1_7.mp4";
+import video_mobile from "../../assets/TEDX m.mp4"
+import scheduled_talks from "../../assets/schedule.svg"
 import Navbar from "../../components/Navbar";
-import theam from "../../assets/Frame1.svg";
+import theam from "../../assets/themeimage.svg";
 
 function Speakers(indspeaker) {
   return (
     <div class='speaker_div position-relative container-fluid '>
         <div class="speaker_ind_img">
           <img src={indspeaker.img} class="speaker_ind_img img-fluid" alt="Responsive image" />
-          <div class="speaker_ind_name_desc_div text-center bg-text inner">
-            <div className="speaker_ind_name_div">
+            <div className="speaker_ind_name_div text-center bg-text inner">
               <h1 class='speaker_ind_name '> {indspeaker.speakername } </h1>
-            </div>
           </div>
         </div>
       <div className="speaker_ind_desc_div">
@@ -26,7 +24,7 @@ function Speakers(indspeaker) {
 }
 
 const Home = () => {
-  const [allactive, setAllActive] = useState(false);
+  const [allactive, setAllActive] = useState(true);
   const [coreactive, setCoreActive] = useState(false);
   const [contentactive, setContentActive] = useState(false);
   const activeFunc = (e) => {
@@ -41,24 +39,25 @@ const Home = () => {
       setCoreActive(false);
     }
   };
-  const allFunction = () => {
-    setAllActive(true);
+const allFunction = () => {
+    setAllActive(true)
     activeFunc("all");
-  };
+  }
   const coreFunction = () => {
-    setCoreActive(true);
+    setCoreActive(true)
     activeFunc("core");
-  };
+  }
   const contentFunction = () => {
-    setContentActive(true);
+    setContentActive(true)
     activeFunc("content");
-  };
+  }
   return (
     <>
       <Navbar />
       {/* GIF Section */}
       <div class="Gif_sec_div w-100">
         <video class='giv_video' src={video} muted autoPlay></video>
+        <video class="gif_video_mobile w-100" src={video_mobile} muted autoPlay></video>
       </div>
       {/*About section */}
       <div class="Home_About_sec w-100">
@@ -67,7 +66,7 @@ const Home = () => {
         </p>
         <section className="mx-4 lg:mx-9 mt-4">
           <div>
-            <div className="flex flex-wrap gap-x-8 justify-start gap-y-3 team-flex md:justify-center mt-5">
+            <div className="flex flex-wrap gap-x-8 gap-y-3 team-flex md:justify-center ">
               <h6
                 className={allactive ? "active" : "category"}
                 onClick={allFunction}
@@ -90,11 +89,15 @@ const Home = () => {
             <div className="team-flex-border"></div>
           </div>
           <div
-            style={{ display: allactive ? "" : "none"}}
+            style={{ display: allactive ? "" : "none"}} 
             className="homeaboutind font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8"
           >
             <p class="home_about_descs">
-              TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world’s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman. Follow TED on Twitter <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a> 
+              TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world’s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at 
+              <a href="https://www.ted.com/">TED.com</a> . TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
+              <br />
+              <br />
+              The annual TED Conference takes place each spring in Vancouver, British Columbia. TED’s media initiatives include <a href="https://www.ted.com/">TED.com</a>, where new TED Talks are posted daily; TED Translators, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities. Follow TED on Twitter <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a>  or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a> 
             </p>
           </div>
           <div
@@ -110,7 +113,7 @@ const Home = () => {
             className="homeaboutind font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8"
           >
             <p class="home_about_descs">
-              Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark deep conversations and connections. TEDxAmsterdam is organised independently under license from TED.
+              Nature vs nurture? Sounds peculiar right?IARE will be hosting a very exciting event.TED x IARE presents you with stories of exceptional individuals from different walks of life that have contributed to society. Join us at TEDxIARE to listen to such thought-provoking tales. Find out how nature vs nurture has affected our kind.
             </p>
           </div>
         </section>
@@ -120,8 +123,19 @@ const Home = () => {
       </div>
 
       {/* Theme Section */}
+      <section className='home_theme_section w-100 '>
+        <div className='container flex sm:items-center flex-col w-100'>
+          <h6 className='home_theme_heading text-center font-bold text-[#dc2626] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
+          <img className='sm:w-7/12 pt-4' src={theam} alt="" />
+          <p className='home_theme_desc font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8'>What is it that defines who or what a person becomes during the time they have here on earth? Is it that nature that, despite all of our trials and tribulations, triumphs? Or is it that the pomp and circumstance of life prevail no matter what. Our actions define us, and our environment is a byproduct of our culture. One could say the difference between identical genetics is that of upbringing and nurture. We are all different; we cater to our own interests and give the few another problem to solve, but this piques curiosity for a reason; it’s human nature. We often see how one child turns out to be a genius while the other barely qualifies as mediocre. The most subtle approach to this baffling question would be to say that we are a blend of nature and nurture.
+          <br />
+          <br />
+          At TEDX IARE, let's explore nature vs. nurture and learn to put nature and nurture in harmony to overcome our own limitations.
+          </p>
+        </div>
+      </section>
       <div className="bg-[#000000] hometheam-section">
-        <div className="container-fluid flex sm:items-center flex-col">
+        {/* <div className="container-fluid flex sm:items-center flex-col">
         <h6 className="font-bold text-[#dc2626] tracking-widest text-4xl mt-4">
             T<span className="text-[#fff]">HEME</span>
           </h6>
@@ -133,24 +147,8 @@ const Home = () => {
           
           <p className=" homethemedesc font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8 ">
             Nature vs nurture? Sounds peculiar right? IARE will be hosting a very exciting event.TED x IARE presents you with stories of exceptional individuals from different walks of life that have contributed to society. Join us at TEDxIARE to listen to such thought-provoking tales. Find out how nature vs nurture has affected our kind.
-
           </p>
-        </div>
-        
-        {/* <div class='speaker_div position-relative container-fluid w-100'>
-
-        <div class="theme_div">
-        <p class="home_ind_text theme_heading font-bold text-[#FFFFFF] inner">
-          <span class="alphabet">T</span>HEME
-        </p>
-          <img src={theam} class="theme_img" alt="Responsive image" />
-          <div class="speaker_ind_name_desc_div text-center bg-text inner">
-            <div className="theme_desc_div">
-              <p class='theme_desc '>Nature vs nurture? Sounds peculiar right? IARE will be hosting a very exciting event.TED x IARE presents you with stories of exceptional individuals from different walks of life that have contributed to society. Join us at TEDxIARE to listen to such thought-provoking tales. Find out how nature vs nurture has affected our kind.</p>
-            </div>
-          </div>
-        </div>
-        </div>*/}
+        </div> */}
       </div> 
 
       {/* Speakers Section */}
@@ -221,7 +219,13 @@ const Home = () => {
       </div>
 
       {/* Scheduled Talks  */}
-      <img src={scheduled_talks} alt="" />
+      <div className="scheduled_Talks_sec container-fluid">
+      <img class="st_img" src={scheduled_talks} alt="" />
+      <div className="st_heading">
+        <h6 className='home_theme_heading home_st_heading home_st_heading font-bold text-[#0B0B0B] tracking-widest text-4xl'>SCHEDULED<span className='text-[#dc2626]'> TALKS</span></h6>
+      </div>
+      </div>
+      
       {/* <div class="v3_211 container-fluid col-md-12 col-lg-12 -col-sm-6 col-xs-12">
         <div class="v3_212"></div>
         <h2 className="homepage_heading_scheduled">
