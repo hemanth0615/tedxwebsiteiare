@@ -121,7 +121,7 @@ const Home = () => {
 
       {/* Theme Section */}
       <div className="bg-[#000000] hometheam-section">
-        {/* <div className="container-fluid flex sm:items-center flex-col">
+        <div className="container-fluid flex sm:items-center flex-col">
         <h6 className="font-bold text-[#dc2626] tracking-widest text-4xl mt-4">
             T<span className="text-[#fff]">HEME</span>
           </h6>
@@ -135,9 +135,9 @@ const Home = () => {
             Nature vs nurture? Sounds peculiar right? IARE will be hosting a very exciting event.TED x IARE presents you with stories of exceptional individuals from different walks of life that have contributed to society. Join us at TEDxIARE to listen to such thought-provoking tales. Find out how nature vs nurture has affected our kind.
 
           </p>
-        </div> */}
+        </div>
         
-        <div class='speaker_div position-relative container-fluid w-100'>
+        {/* <div class='speaker_div position-relative container-fluid w-100'>
 
         <div class="theme_div">
         <p class="home_ind_text theme_heading font-bold text-[#FFFFFF] inner">
@@ -150,8 +150,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
 
       {/* Speakers Section */}
       <div className="container-fluid home_speakers_Sec w-100">
