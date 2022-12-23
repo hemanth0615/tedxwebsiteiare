@@ -3,13 +3,13 @@ import "./Home.css";
 import member from "../../assets/member.svg";
 import Gif from "../../assets/gif.png";
 import video from "../../assets/Comp 1_6.mp4";
-
+import scheduled_talks from "../../assets/Frame1000001006.svg"
 import Navbar from "../../components/Navbar";
 import theam from "../../assets/Frame1.svg";
 
 function Speakers(indspeaker) {
   return (
-    <div class='speaker_div position-relative container-fluid'>
+    <div class='speaker_div position-relative container-fluid '>
         <div class="speaker_ind_img">
           <img src={indspeaker.img} class="speaker_ind_img img-fluid" alt="Responsive image" />
           <div class="speaker_ind_name_desc_div text-center bg-text inner">
@@ -57,12 +57,11 @@ const Home = () => {
     <>
       <Navbar />
       {/* GIF Section */}
-      <div class="Gif_sec">
-        <video src={video} muted autoPlay></video>
+      <div class="Gif_sec_div w-100">
+        <video class='giv_video' src={video} muted autoPlay></video>
       </div>
-
       {/*About section */}
-      <div class="Home_About_sec">
+      <div class="Home_About_sec w-100">
         <p class="home_ind_text">
           <span class="alphabet">A</span>bout
         </p>
@@ -121,37 +120,41 @@ const Home = () => {
       </div>
 
       {/* Theme Section */}
-      <section className="bg-[#000000] theam-section">
-        <div className="container flex sm:items-center flex-col">
+      <div className="bg-[#000000] hometheam-section">
+        {/* <div className="container-fluid flex sm:items-center flex-col">
+        <h6 className="font-bold text-[#dc2626] tracking-widest text-4xl mt-4">
+            T<span className="text-[#fff]">HEME</span>
+          </h6>
           <img
-            className="sm:w-7/12 lg:mb-20 md:mb-14 sm:mb-12 mb-8 sm:pt-20 pt-10"
+            className="hometheam-sectionimg lg:mb-20 md:mb-14 sm:mb-12 mb-8 sm:pt-20 pt-10"
             src={theam}
             alt=""
           />
-          <h6 className="font-bold text-[#dc2626] tracking-widest text-4xl">
-            T<span className="text-[#fff]">HEME</span>
-          </h6>
-          <p className="font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8">
-            What is it that defines who or what a person becomes during the time
-            they have here on earth? Is it that nature that, despite all of our
-            trials and tribulations, triumphs? Or is it that the pomp and
-            circumstance of life prevail no matter what. Our actions define us,
-            and our environment is a byproduct of our culture. One could say the
-            difference between identical genetics is that of upbringing and
-            nurture. We are all different; we cater to our own interests and
-            give the few another problem to solve, but this piques curiosity for
-            a reason; it’s human nature. We often see how one child turns out to
-            be a genius while the other barely qualifies as mediocre. The most
-            subtle approach to this baffling question would be to say that we
-            are a blend of nature and nurture. At TEDX IARE, let's explore
-            nature vs. nurture and learn to put nature and nurture in harmony to
-            overcome our own limitations.
+          
+          <p className=" homethemedesc font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8 ">
+            Nature vs nurture? Sounds peculiar right? IARE will be hosting a very exciting event.TED x IARE presents you with stories of exceptional individuals from different walks of life that have contributed to society. Join us at TEDxIARE to listen to such thought-provoking tales. Find out how nature vs nurture has affected our kind.
+
           </p>
+        </div> */}
+        
+        <div class='speaker_div position-relative container-fluid w-100'>
+
+        <div class="theme_div">
+        <p class="home_ind_text theme_heading font-bold text-[#FFFFFF] inner">
+          <span class="alphabet">T</span>HEME
+        </p>
+          <img src={theam} class="theme_img" alt="Responsive image" />
+          <div class="speaker_ind_name_desc_div text-center bg-text inner">
+            <div className="theme_desc_div">
+              <p class='theme_desc '>Nature vs nurture? Sounds peculiar right? IARE will be hosting a very exciting event.TED x IARE presents you with stories of exceptional individuals from different walks of life that have contributed to society. Join us at TEDxIARE to listen to such thought-provoking tales. Find out how nature vs nurture has affected our kind.</p>
+            </div>
+          </div>
         </div>
-      </section>
+        </div>
+      </div>
 
       {/* Speakers Section */}
-      <div className="container-fluid home_speakers_Sec ">
+      <div className="container-fluid home_speakers_Sec w-100">
         <p class="home_ind_text ">
           <span class="alphabet">S</span>
           <span class="w_text">PEAKERS</span>
@@ -218,7 +221,8 @@ const Home = () => {
       </div>
 
       {/* Scheduled Talks  */}
-      <div class="v3_211 container-fluid col-md-12 col-lg-12 -col-sm-6 col-xs-12">
+      <img src={scheduled_talks} alt="" />
+      {/* <div class="v3_211 container-fluid col-md-12 col-lg-12 -col-sm-6 col-xs-12">
         <div class="v3_212"></div>
         <h2 className="homepage_heading_scheduled">
           SCHEDULED <span style={{ color: "#EB0028" }}>TALKS</span>
@@ -304,10 +308,10 @@ const Home = () => {
             <span class="v3_266">5:00 pm </span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* FAQ */}
-      <section class="home_faq_div">
+      <section class="home_faq_div w-100">
         <h2 className="homepage_heading white">
           FREQUENTLY ASKED <span style={{ color: "#EB0028" }}>QUESTIONS</span>
         </h2>
