@@ -150,8 +150,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        </div>
-      </div> */}
+        </div>*/}
+      </div> 
 
       {/* Speakers Section */}
       <div className="container-fluid home_speakers_Sec w-100">
