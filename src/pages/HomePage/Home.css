@@ -1104,6 +1104,13 @@ details[open] summary::before {
         line-height: 36px;
         letter-spacing: 0em;
     }
+    .home_about_end_desc {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
     .homeaboutind {
         max-width: 90%;
         margin-left: 5%;
