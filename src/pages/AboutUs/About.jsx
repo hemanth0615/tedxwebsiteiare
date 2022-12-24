@@ -47,20 +47,25 @@ function About() {
       <div className='container mx-auto mt-7'>
         <section className='space-x-2 sm:mx-2 space-y-3 mb-10'>
           <span className='ml-2 text-2xl text-black  font-bold tracking-wide md:text-3xl'>What is<span className='text-2xl text-[#dc2626] font-bold md:text-3xl'> TED?</span></span>
-          <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world’s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
+          <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world’s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman. Follow TED on Twitter <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a> 
           </p>
+          <span className='ml-2 text-2xl text-black  font-bold tracking-wide md:text-3xl'>What is<span className='text-2xl text-[#dc2626] font-bold md:text-3xl'> TEDx?</span></span>
+          <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
+          </p> 
           <img className='w-24 md:w-40' src={TedText} alt="TedX" />
           <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark deep conversations and connections. TEDxAmsterdam is organised independently under license from TED.
           </p>
         </section>
       </div>
 
-      <section className='bg-[#000000] theam-section'>
-        <div className='container flex sm:items-center flex-col'>
-
-          <img className='sm:w-7/12 lg:mb-20 md:mb-14 sm:mb-12 mb-8 sm:pt-20 pt-10' src={theam} alt="" />
-          <h6 className='font-bold text-[#dc2626] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
-          <p className='font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8'>Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark deep conversations and connections. TEDxAmsterdam is organised independently under license from TED.
+      <section className='home_theme_section w-100 '>
+        <div className='container flex sm:items-center flex-col w-100'>
+          <h6 className='home_theme_heading text-center font-bold text-[#dc2626] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
+          <img className='sm:w-7/12 pt-4' src={theam} alt="" />
+          <p className='home_theme_desc font-semibold tracking-wider w-full text-[#fff]  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8'>What is it that defines who or what a person becomes during the time they have here on earth? Is it that nature that, despite all of our trials and tribulations, triumphs? Or is it that the pomp and circumstance of life prevail no matter what. Our actions define us, and our environment is a byproduct of our culture. One could say the difference between identical genetics is that of upbringing and nurture. We are all different; we cater to our own interests and give the few another problem to solve, but this piques curiosity for a reason; it’s human nature. We often see how one child turns out to be a genius while the other barely qualifies as mediocre. The most subtle approach to this baffling question would be to say that we are a blend of nature and nurture.
+          <br />
+          <br />
+          At TEDX IARE, let's explore nature vs. nurture and learn to put nature and nurture in harmony to overcome our own limitations.
           </p>
         </div>
       </section>

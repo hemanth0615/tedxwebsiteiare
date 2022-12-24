@@ -27,7 +27,7 @@ function Footer() {
               </div>
             </div>
             <div>
-              <p className='font-medium text-md leading-6 text-[#fff] tracking-widest w-96 overflow-hidden mt-3 md:text-sm'>Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark</p>
+              <p className='font-medium text-md leading-6 text-[#fff] tracking-widest w-96 overflow-hidden mt-3 md:text-sm'>TEDx IARE is a student organized TED event, with a noble intent of spreading wisdom through words.</p>
             </div>
           </div>
           <div className='xl:pl-72 lg:pl-64 md:pl-72 '>
