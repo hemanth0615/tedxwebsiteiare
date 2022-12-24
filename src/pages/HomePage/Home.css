@@ -33,20 +33,18 @@
     letter-spacing: 0.05em;
 }
 .home_about_descs{
-    text-align: initial;
+    text-align: justify;
     font-weight: bold;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0em;
     font-family: 'Poppins';
     font-style: normal;
     color: #0B0B0B;
 }
 .home_about_end_desc{
     margin-top: 5%;
-    font-family: 'Porter Sans Block';
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -54,11 +52,7 @@
     letter-spacing: 0.05em;
     color: #EB0028;
 }
-/* .home_theme_Sec{
-    width: 100%;
-    height: 100%;
-    background: #000000;
-}
+
 .theme_img{
     width: 100%;
     padding-bottom: 5%;
@@ -70,7 +64,7 @@
     color: #FFFFFF;
 }
 .b_text{
-    color: #000000;
+    color: #0B0B0B;
 }
 
 
@@ -132,7 +126,7 @@
     position: relative;
     width: 100vw;
     height: 100%;
-    background: #000000;
+    background: #0B0B0B;
     padding-top: 5%;
 }
 .speaker_ind_img {
@@ -890,7 +884,7 @@
 
 
 .home_faq_div{
-    background-color: #000000;
+    background-color: #0B0B0B;
 }
 .homepage_heading{
     height: 72px;
@@ -1119,8 +1113,6 @@ details[open] summary::before {
         letter-spacing: 0em;
     }
     .home_about_end_desc {
-        font-family: 'Porter Sans Block';
-        font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 24px;
