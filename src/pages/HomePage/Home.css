@@ -24,6 +24,14 @@
     max-width: 80%;
     margin-left: 10%;
 }
+.aboutind{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+}
 .home_about_descs{
     text-align: initial;
     font-weight: bold;
@@ -31,11 +39,14 @@
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.05em;
-
+    font-family: 'Poppins';
+    font-style: normal;
     color: #0B0B0B;
 }
 .home_about_end_desc{
     margin-top: 5%;
+    font-family: 'Porter Sans Block';
+    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -941,7 +952,7 @@ details summary {
 }
 
 details>*:not(summary) {
-    animation: details-show 500ms ease-in-out;
+    animation: details-show 0ms ease-in-out;
     position: relative;
     z-index: 1;
     transition: all 0.3s ease-in-out;

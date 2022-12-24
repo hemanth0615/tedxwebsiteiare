@@ -68,24 +68,24 @@ const allFunction = () => {
         <section className="mx-4 lg:mx-9 mt-4">
           <div>
             <div className="flex flex-wrap gap-x-8 gap-y-3 team-flex md:justify-center ">
-              <h6
+              <h2 class="aboutind"
                 className={allactive ? "active" : "category"}
                 onClick={allFunction}
               >
                 TED
-              </h6>
-              <h6
+              </h2>
+              <h2 class="aboutind"
                 className={coreactive ? "active" : "category"}
                 onClick={coreFunction}
               >
                 TEDx
-              </h6>
-              <h6
+              </h2>
+              <h2 class="aboutind"
                 className={contentactive ? "active" : "category"}
                 onClick={contentFunction}
               >
                 TEDx IARE
-              </h6>
+              </h2>
             </div>
             <div className="team-flex-border"></div>
           </div>
@@ -327,7 +327,7 @@ const allFunction = () => {
         </h2>
         <div className="home_faq">
           <details class="style4">
-            <summary>Who are eligible for this event?</summary>
+            <summary>What can I expect at TEDx IARE?</summary>
             <div class="content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -345,7 +345,7 @@ const allFunction = () => {
           </details>
 
           <details class="style4">
-            <summary>Who are eligible for this event?</summary>
+            <summary>How long is the event?</summary>
             <div class="content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -363,7 +363,7 @@ const allFunction = () => {
           </details>
 
           <details class="style4">
-            <summary>Who are eligible for this event?</summary>
+            <summary>Will food be provided?</summary>
             <div class="content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -380,7 +380,7 @@ const allFunction = () => {
             </div>
           </details>
           <details class="style4">
-            <summary>Who are eligible for this event?</summary>
+            <summary>Is there a student discount available?</summary>
             <div class="content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -397,7 +397,7 @@ const allFunction = () => {
             </div>
           </details>
           <details class="style4">
-            <summary>Who are eligible for this event?</summary>
+            <summary>Is on spot registration available?</summary>
             <div class="content">
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi

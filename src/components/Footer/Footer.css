@@ -1,3 +1,6 @@
+.footer-div{
+  position:sticky;
+}
 footer {
   background: linear-gradient(
     0deg,
