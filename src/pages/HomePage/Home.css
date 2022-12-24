@@ -87,7 +87,7 @@
 }
 .home_theme_heading{
     padding-top: 3%;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
     font-weight: 600;
     font-size: 48px;
     line-height: 72px;
@@ -1107,6 +1107,9 @@ details[open] summary::before {
     .gif_video_mobile{
         display: block;
     }
+    .Home_About_sec{
+        padding-bottom: 5%;
+    }
     .home_ind_text{
         padding-top: 5%;
         padding-bottom: -10%;
@@ -1116,6 +1119,8 @@ details[open] summary::before {
         letter-spacing: 0em;
     }
     .home_about_end_desc {
+        font-family: 'Porter Sans Block';
+        font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 24px;
@@ -1158,6 +1163,7 @@ details[open] summary::before {
         letter-spacing: 0;
     }
     .home_theme_section {
+        padding-bottom:5%;
         /* background: url(../../assets/Rectangle243.svg); */
         background: url(../../assets/Rectangle243.svg) no-repeat center center fixed;
         -webkit-background-size: cover;
