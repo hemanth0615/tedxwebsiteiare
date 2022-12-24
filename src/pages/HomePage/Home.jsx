@@ -161,7 +161,7 @@ const allFunction = () => {
       <div className="container-fluid home_speakers_Sec w-100">
         <p class="home_ind_text ">
           <span class="alphabet">S</span>
-          <span class="w_text">PEAKERS</span>
+          <span class="w_text text-[#fff]">PEAKERS</span>
         </p>
         <div className="speakers_sec_div row">
           <div className="ind_speaker_div col-xs-6 col-sm-6 col-md-3 col-lg-3">

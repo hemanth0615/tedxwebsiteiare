@@ -44,8 +44,8 @@ function Navbar() {
           <nav className='mobile-nav relative'>
             <img className='md:hidden h-16 w-full nav-bg' src={navbg} alt="" />
             <div className='flex space-x-10 mr-6 md:hidden nav-menu absolute top-4 right-3'>
-              <p className='text-lg font-medium cursor-pointer navhometext' ><a href="/"><span className='text-[#EC1015]'>Home</span></a></p>
-              <p className='text-lg text-[#fff] font-medium cursor-pointer'><a href="about"><span className='text-[#EC1015]'>About </span> Us</a></p>
+              <p className='text-lg font-medium cursor-pointer navhometext' ><a href="/"><span className='text-[#FFF]'>Home</span></a></p>
+              <p className='text-lg text-[#fff] font-medium cursor-pointer'><a href="about"><span className='text-[#FFF]'>About </span> Us</a></p>
               <button className='text-lg font-medium bg-[#EC1015] px-2 py-0.5 text-[#fff]'><a href="/register">Register</a></button>
             </div>
           </nav>
