@@ -3,7 +3,7 @@ import TedText from "../../assets/ted-text.svg"
 import member from "../../assets/member.svg"
 import pastevent from "../../assets/past-event.svg"
 import desktop from "../../assets/desktop-image.svg"
-import mobile from "../../assets/mobile-image.svg"
+import mobile from "../../assets/Frame20.svg"
 import theam from "../../assets/themeimage.svg"
 import prev from "../../assets/prev.svg"
 import next from "../../assets/next.svg"
@@ -70,10 +70,10 @@ function About() {
           </p>
         </div>
       </section>
-      <section className='px-3 lg:mx-9 mt-4'>
-        <h2 className='text-2xl font-bold md:text-3xl text-center pb-3 '>MEET OUR <span className='text-[#dc2626]'>TEAM</span></h2>
+      <section className='px-3 lg:mx-9'>
+        <h2 className='md:text-3xl text-center about_mot'>MEET OUR <span className='text-[#dc2626]'>TEAM</span></h2>
         <div>
-          <div className='flex justify-start gap-y-3 team-flex md:justify-center mt-5 overflow-scroll'>
+          <div className='flex justify-start gap-y-3 team-flex md:justify-center mt-3 overflow-scroll'>
             {
               domains.map((e, index) => {
                 return <>
