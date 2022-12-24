@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import member from "../../assets/member.svg";
-import video from "../../assets/Comp 1_7.mp4";
+import video from "../../assets/S.mp4";
 import video_mobile from "../../assets/TEDX m.mp4"
 import scheduled_talks from "../../assets/schedule.svg"
 import Navbar from "../../components/Navbar";
@@ -14,11 +14,11 @@ function Speakers(indspeaker) {
           <img src={indspeaker.img} class="speaker_ind_img img-fluid" alt="Responsive image" />
             <div className="speaker_ind_name_div text-center bg-text inner">
               <h1 class='speaker_ind_name '> {indspeaker.speakername } </h1>
-          </div>
+            </div>
         </div>
-      <div className="speaker_ind_desc_div">
-        <p class='speaker_ind_desc'>{indspeaker.desc}</p>
-      </div>
+        <div className="speaker_ind_desc_div">
+          <p class='speaker_ind_desc'>{indspeaker.desc}</p>
+        </div>
     </div>
   );
 }
@@ -58,6 +58,7 @@ const allFunction = () => {
       <div class="Gif_sec_div w-100">
         <video class='giv_video' src={video} muted autoPlay></video>
         <video class="gif_video_mobile w-100" src={video_mobile} muted autoPlay></video>
+        
       </div>
       {/*About section */}
       <div class="Home_About_sec w-100">
@@ -99,6 +100,10 @@ const allFunction = () => {
               <br />
               The annual TED Conference takes place each spring in Vancouver, British Columbia. TED’s media initiatives include <a href="https://www.ted.com/">TED.com</a>, where new TED Talks are posted daily; TED Translators, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities. Follow TED on Twitter <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a>  or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a> 
             </p>
+            <div className="home_about_end_desc">
+              <p>“IDEAS WORTH SPREADING”</p>
+            </div>
+
           </div>
           <div
             style={{ display: coreactive ? "" : "none" }}
@@ -107,6 +112,9 @@ const allFunction = () => {
             <p class="home_about_descs">
               In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
             </p>
+            <div className="home_about_end_desc">
+          <p>“IDEAS WORTH SPREADING”</p>
+        </div>
           </div>
           <div
             style={{ display: contentactive ? "" : "none" }}
@@ -117,9 +125,7 @@ const allFunction = () => {
             </p>
           </div>
         </section>
-        <div className="home_about_end_desc">
-          <p>“IDEAS WORTH SPREADING”</p>
-        </div>
+        
       </div>
 
       {/* Theme Section */}

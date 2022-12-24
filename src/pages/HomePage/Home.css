@@ -19,6 +19,7 @@
 .categoryMembers{
     width: 100%;
 }
+
 .homeaboutind{
     width: 80%;
     margin-left: 10%;
@@ -34,7 +35,7 @@
     color: #0B0B0B;
 }
 .home_about_end_desc{
-    margin: 5%;
+    margin-top: 5%;
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -131,10 +132,8 @@
 .speaker_ind_name_div {
     width: 100vw;
     height: 40px;
-    padding-top: auto;
-    padding-bottom: auto;
     position: absolute;
-    bottom: -5%;
+    bottom: -6%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #0B0B0B;
@@ -144,6 +143,7 @@
     line-height: 36px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    vertical-align: middle;
 }
 /* .speaker_ind_name_div:hover {
     background: #EB0028;
