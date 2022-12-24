@@ -4,7 +4,7 @@ import member from "../../assets/member.svg"
 import pastevent from "../../assets/past-event.svg"
 import desktop from "../../assets/desktop-image.svg"
 import mobile from "../../assets/mobile-image.svg"
-import theam from "../../assets/theam.png"
+import theam from "../../assets/themeimage.svg"
 import prev from "../../assets/prev.svg"
 import next from "../../assets/next.svg"
 
