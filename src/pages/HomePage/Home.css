@@ -1148,7 +1148,7 @@ details[open] summary::before {
     }
     .home_theme_section {
         /* background: url(../../assets/Rectangle243.svg); */
-        background: url(../../assets/themeimagemobile.svg) no-repeat center center fixed;
+        background: url(../../assets/Rectangle243.svg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
