@@ -25,9 +25,9 @@ function Navbar() {
         <div className="container w-full p-4 text-white mx-auto  relative flex items-center justify-between">
           <a href="/"><img className='sm:ml-5' src={logo} alt="logo" /></a>
           <div className='hidden space-x-10 mr-6 md:flex'>
-            <p className='text-lg font-medium cursor-pointer navhometext' ><a href="/"><span style={{ color: 'red' }}>H</span>ome</a></p>
-            <p className='text-lg font-medium cursor-pointer'><a href="about">About Us</a></p>
-            <button className='text-lg font-medium bg-[#EC1015] px-2 py-0.5'><a href="/register">Register</a></button>
+            <p className='text-lg font-medium cursor-pointer navhometext hover-overlay '  style={{color:'#fff'}}><a class="hitem_home"  href="/">Home</a></p>
+            <p className='text-lg font-medium cursor-pointer hitem_about'><a href="about">About Us</a></p>
+            <button className='text-lg font-medium bg-[#EC1015] px-2 py-0.5 hitem_reg'><a href="/register">Register</a></button>
           </div>
           <button className='md:hidden' onClick={buttonClicked}>
             {

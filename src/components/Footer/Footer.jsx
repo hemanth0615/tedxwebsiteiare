@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className='grid grid-cols-1 w-full h-54  pt-10 lg:px-24 xl:grid-cols-3 lg:gap-y-6 lg:grid-cols-2 lg:h-80 md:grid-cols-2 md:h-96 footer-div'>
+        <div className='grid grid-cols-1 w-full h-54 pt-10 lg:px-24 xl:grid-cols-3 lg:gap-y-6 lg:grid-cols-2 lg:h-80 md:grid-cols-2 md:h-96 footer-div'>
 
 
           <div className='grid grid-cols-2 items-start space-x-20'>
