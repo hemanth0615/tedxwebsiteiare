@@ -904,7 +904,7 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
-summary::before {
+/* summary::before {
     font-family: "Hiragino Mincho ProN", "Open Sans", sans-serif;
     content: "▶";
     position: absolute;
@@ -914,13 +914,13 @@ summary::before {
     transform-origin: center;
     transition: 0.2s transform ease;
     
-}
+} */
 
-details[open]>summary:before {
+/* details[open]>summary:before {
     transform: rotate(90deg);
     transition: 0.45s transform ease;
     
-}
+} */
 
 /* # The Sliding Summary # */
 details {
@@ -1138,6 +1138,16 @@ details[open] summary::before {
         line-height: 36px;
         text-align: center;
         letter-spacing: 0;
+    }
+    .home_theme_section {
+        /* background: url(../../assets/Rectangle243.svg); */
+        background: url(../../assets/themeimagemobile.svg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /* width: 100%;
+    position: relative; */
     }
     .speaker_ind_name_div{
         height: 26px;
