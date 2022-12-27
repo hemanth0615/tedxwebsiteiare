@@ -1,58 +1,37 @@
-import React from 'react'
-import { useState } from 'react'
-import logo from "../assets/logo.svg"
-import menu from "../assets/menu.svg"
-import menu2 from "../assets/menu-2.svg"
-import navbg from "../assets/nav-bg.png"
+import React , {useState} from 'react'
 
+// Link for Routing
+import { Link , useLocation } from 'react-router-dom'
 
+// Assets Imports
+import logo from "../Assets/logo.svg"
+import menu from "../Assets/menu.svg"
+import close from "../Assets/menu-2.svg"
 
+const Navbar = () => {
 
-function Navbar() {
-  const [click, setClick] = useState(false)
-  const buttonClicked = () => {
-    if (click === true) {
-      setClick(false)
-    }
-    else {
-      setClick(true)
-    }
-  }
-  return (
-    <>
+    const [menuToggle , setMenuToggle] = useState(false);
 
-      <nav className='bg-[#000000] font-[poppins] relative' >
-        <div className="container w-full p-4 text-white mx-auto  relative flex items-center justify-between">
-          <a href="/"><img className='sm:ml-5' src={logo} alt="logo" /></a>
-          <div className='hidden space-x-10 mr-6 md:flex'>
-            <p className='text-lg font-medium cursor-pointer navhometext hover-overlay '  style={{color:'#fff'}}><a class="hitem_home"  href="/">Home</a></p>
-            <p className='text-lg font-medium cursor-pointer hitem_about'><a href="about">About Us</a></p>
-            <button className='text-lg font-medium bg-[#EC1015] px-2 py-0.5 hitem_reg'><a href="/register">Register</a></button>
-          </div>
-          <button className='md:hidden' onClick={buttonClicked}>
-            {
-              !click ? <img className='w-9/12' src={menu} alt='menu-button' /> : <img className='w-9/12' src={menu2} alt='menu-button' />
-            }
+    const location = useLocation();
 
-            {/* <img style={{ display: click ? "block" : "hidden" }} className='w-9/12' src={menu2} alt='menu-button' /> */}
+    const {pathname} = location;
 
-          </button>
-        </div>
-      </nav>
-      {
-        click ? <>
-          <nav className='mobile-nav relative'>
-            <img className='md:hidden h-16 w-full nav-bg' src={navbg} alt="" />
-            <div className='flex space-x-10 mr-6 md:hidden nav-menu absolute top-4 right-3'>
-              <p className='text-lg font-medium cursor-pointer navhometext' ><a href="/"><span className='text-[#EC1015]'>Home</span></a></p>
-              <p className='text-lg text-[#fff] font-medium cursor-pointer'><a href="about"><span className='text-[#EC1015]'>About </span> Us</a></p>
-              <button className='text-lg font-medium bg-[#EC1015] px-2 py-0.5 text-[#fff]'><a href="/register">Register</a></button>
+    return (
+        <nav className=' w-[100%] h-[77px] bg-[#000000] flex flex-row items-center justify-between px-6 sm:px-20 font-[Poppins]'>
+            <div className="logo flex flex-col items-start justify-center">
+                <img src={logo} alt="TedxIARE"/>
+                <span className='text-[12px] font-[600] text-[#EB0028]'>x<span className='text-[#ffffff]'> = independently organized event</span> </span>
             </div>
-          </nav>
-        </> : <></>
-      }
-    </>
-  )
+            <ul className={`flex flex-row items-center md:items-center justify-end gap-x-8 absolute w-[100%] md:w-auto navBG h-[77px] md:h-auto ${menuToggle ? 'top-[77px] z-10' : 'top-0 -z-10'} left-0 pr-12 sm:pr-16 md:z-[1] md:pr-0 md:static transition-all`}>
+                <li className=''><Link onClick={()=>{setMenuToggle(false)}} to="/" className={`hover:text-[#ffffff] font-[600] text-[16px] font-[Poppins] border-b-2 border-transparent hover:border-b-2 ${pathname === '/' ? 'text-[#ffffff] border-[#EC1015]' : 'text-[#EC1015] border-transparent'}`}>Home</Link></li>
+                <li className=''><Link onClick={()=>{setMenuToggle(false)}} to="/about" className={`hover:text-[#ffffff] font-[600] text-[16px] font-[Poppins] border-b-2 border-transparent hover:border-b-2 ${pathname === '/about' ? 'text-[#ffffff] border-[#EC1015]' : 'text-[#EC1015] border-transparent'}`}>About Us</Link></li>
+                <li className=''><Link onClick={()=>{setMenuToggle(false)}} to="/register" className='w-[92px] h-[32px] bg-[#EB0028] text-[#ffffff] hover:bg-[#ffffff] hover:text-[#EB0028] text-[16px] font-[600] px-[10px] py-[3px]'>Register</Link></li>
+            </ul>
+            <div className="flex justify-center items-center cursor-pointer md:hidden" onClick={()=>{setMenuToggle(!menuToggle)}}>
+                {menuToggle ? <img src={close} alt="close" /> : <img src={menu} alt="menu" /> }
+            </div>
+        </nav>
+    )
 }
 
 export default Navbar
